@@ -1,0 +1,7 @@
+/.github/
+/.git/
+/.idea/
+/vendor/
+/build/
+.phpunit.result.cache
+/.vscode/
