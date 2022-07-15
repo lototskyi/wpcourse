@@ -7,6 +7,7 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 
 .promo {
@@ -76,7 +77,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn {
+.promo .promo_btn, .gift .register_btn {
     display: block;
     margin: 0 auto;
     margin-top: 45px;
@@ -116,12 +117,14 @@ h2.title {
 }
 
 .waiting {
-    height: 604px;
+    min-height: 604px;
     background-color: #EFEFEF;
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header,
+.finish .finish_header,
+.webinar_time_wrapper .webinar_header_1 {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 30px;
@@ -130,7 +133,15 @@ h2.title {
     color: #252525;
 }
 
-.waiting .waiting_divider {
+.webinar_time_wrapper .webinar_header_1 {
+    margin-top: 36px;
+}
+
+.finish .finish_header {
+    color: #fff;
+}
+
+.waiting .waiting_divider, .finish .finish_divider {
     width: 217px;
     height: 4px;
     background: #F9BF3B;
@@ -148,13 +159,12 @@ h2.title {
 }
 
 .waiting .waiting_wrapper {
+    display: flex;
+    justify-content: space-between;
     margin-top: 45px;
 }
 
 .waiting .waiting_wrapper .waiting_item {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px;
     width: 339px;
     text-align: center;
 }
@@ -170,4 +180,151 @@ h2.title {
     font-size: 15px;
     line-height: 21px;
     color: #4A4A4A;
+}
+
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header,
+.webinar_time_wrapper .webinar_header_2 {
+    margin-left: 391px;
+    font-family: 'Roboto - Black';
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+
+.webinar_time_wrapper .webinar_header_2 {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    font-family: 'Roboto Light';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+
+.optimization .optimization_text span {
+    font-family: "Roboto - Bold";
+    font-weight: 700;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/middle.jpg') center center/cover no-repeat;
+}
+
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    background: #B4E2FF;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: #EFEFEF;
+}
+
+.gift {
+    height: 631px;
+    background: #EFEFEF;
+    padding: 86px 0 87px 0;
+}
+
+.gift .gift_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gift .gift_descr {
+    margin: 0 auto;
+    margin-top: 45px;
+    max-width: 1161px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #252525;
+}
+
+.webinar_time_wrapper {
+    min-height: 460px;
+}
+
+.webinar_time_wrapper .webinar_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 81px;
+}
+
+.webinar_time_wrapper .webinar_descr {
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.footer {
+    height: 169px;
+    background: #1A1A1A;
+    padding: 57px 0 69px 0;
+    color: #888888;
+}
+
+.footer .contact_wrapper {
+    width: 407px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.footer .contact_wrapper a {
+    color: #888888;
+    text-decoration-line: underline;
 }
